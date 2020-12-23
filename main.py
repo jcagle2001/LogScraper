@@ -12,5 +12,7 @@ sw = Timer()
 sw.start_timer()
 app.MainLoop()
 
-while True:
+while not tray.is_ready_to_exit():
     pass
+
+SystemExit(0)
